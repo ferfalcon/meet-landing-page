@@ -50,9 +50,9 @@ Use multiple responsive images (Art direction) within the same element.
 
 ```html
 <picture>
-	<source media="(max-width: 48rem)" srcset="./images/image-footer.jpg">
-	<source media="(max-width: 90rem)" srcset="./images/image-footer-tablet.jpg">
-	<img class="stats-card__image" src="./images/image-footer-desktop.jpg" alt="Woman in videocall">
+  <source media="(max-width: 48rem)" srcset="./images/image-footer.jpg">
+  <source media="(max-width: 90rem)" srcset="./images/image-footer-tablet.jpg">
+  <img class="stats-card__image" src="./images/image-footer-desktop.jpg" alt="Woman in videocall">
 </picture>
 ```
 
