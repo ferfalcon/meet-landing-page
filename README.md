@@ -60,7 +60,6 @@ Use multiple responsive images (Art direction) within the same element.
 
 - [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images/) - This helped me with the footer image.
 
-
 ## Author
 
 - LinkedIn - [Fernando Falcon](https://www.linkedin.com/in/fernandofalcon/)
