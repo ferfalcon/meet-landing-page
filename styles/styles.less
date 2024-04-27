@@ -25,7 +25,7 @@
 	--le-700: .25em;
 
 	// Typographic elements
-	--ty-heading-primary: var(--fw-black) var(--fs-800)/var(--lh-300) var(--ff-main);
+	--ty-heading-primary: var(--fw-black) var(--fs-700)/var(--lh-300) var(--ff-main);
 	--ty-heading-secondary: var(--fw-black) var(--fs-600)/var(--lh-400) var(--ff-main);
 	--ty-highlight: var(--fw-black) var(--fs-400)/var(--lh-800) var(--ff-main);
 	--ty-copy-primary: var(--fw-medium) var(--fs-400)/var(--lh-800) var(--ff-main);
@@ -62,27 +62,6 @@ img {
 	font-style: italic;
 }
 
-button {
-	font: var(--ty-button);
-}
-
-h1 {
-	font: var(--ty-primary-heading);
-}
-
-h2 {
-	font: var(--ty-secondary-heading);
-}
-
-h3 {
-	// letter-spacing: var(--le-700);
-	// text-transform: uppercase;
-}
-
-p {
-	font: var(--ty-main-copy);
-}
-
 .top-wrapper {
 	font-family: var(--ff-main);
 	font-size: var(--fs-400);
@@ -92,4 +71,45 @@ p {
 	margin: 0;
 	min-height: 100svh;
 	text-align: center;
+}
+
+.top-section {
+	display: grid;
+}
+
+.top-section::before {
+	content: "";
+	display: block;
+	height: 153px;
+	background-image: url('../images/image-hero.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.top-section__title {
+	font: var(--ty-heading-primary);
+	color: var(--cl-neutral-800);
+	margin: 3rem 2rem 1.5rem;
+}
+
+.top-section__copy {
+	font: var(--ty-copy-primary);
+	margin: 0 1.5rem 2rem;
+}
+
+.top-section__button {
+	font: var(--ty-button);
+	color: var(--cl-neutral-100);
+	border: 0;
+	background: var(--cl-main-400);
+	padding: 1rem 2.575rem;
+	border-radius: 1.813rem;
+	width: fit-content;
+	margin: 0 auto 1rem;
+	text-decoration: none;
+}
+
+.top-section__button--accent-color {
+	background: var(--cl-accent-400);
 }
