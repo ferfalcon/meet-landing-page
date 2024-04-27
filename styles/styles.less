@@ -4,6 +4,25 @@
 
 	--fw-medium: 400;
 	--fw-black: 700;
+
+	--fs-400: 1rem;
+	--fs-500: 1.125rem;
+	--fs-600: 2rem;
+	--fs-700: 2.5rem;
+	--fs-800: 3em;
+	--fs-900: 4em;
+
+	// Colours
+	--cl-main-200: hsl(192 92% 77%);
+	--cl-main-400: hsl(192 37% 48%);
+
+	--cl-accent-200: hsl(268 100% 86%);
+	--cl-accent-400: hsl(268 34% 53%);
+
+	--cl-neutral-100: hsl(0 0% 100%);
+	--cl-neutral-200: hsl(0 0% 98%);
+	--cl-neutral-400: hsl(240 10% 57%);
+	--cl-neutral-800: hsl(240 21% 20%);
 }
 
 html {
@@ -28,10 +47,12 @@ button {
 }
 
 .top-wrapper {
+	font-family: var(--ff-main);
+	font-size: var(--fs-400);
+	color: var(--cl-neutral-400);
 	display: grid;
 	align-content: center;
 	margin: 0;
 	min-height: 100svh;
-	font-family: var(--ff-main);
 	text-align: center;
 }
