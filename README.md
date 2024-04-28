@@ -56,6 +56,22 @@ Use multiple responsive images (Art direction) within the same element.
 </picture>
 ```
 
+Balance text wrapping
+
+```css
+.section-title {
+	text-wrap: balance;
+}
+```
+
+Reserve space for scroll bar to avoid content shift
+
+```css
+.body {
+	scrollbar-gutter: stable;
+}
+```
+
 ### Useful resources
 
 - [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images/) - This helped me with the footer image.
