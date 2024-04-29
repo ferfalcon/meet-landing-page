@@ -34,9 +34,11 @@
 
 	// Colours
 	--cl-main-200: hsl(192 92% 77%);
+	--cl-main-300: hsl(192 54% 64%);
 	--cl-main-400: hsl(192 37% 48%);
 
 	--cl-accent-200: hsl(268 100% 86%);
+	--cl-accent-300: hsl(267 54% 71%);
 	--cl-accent-400: hsl(268 34% 53%);
 
 	--cl-neutral-100: hsl(0 0% 100%);
@@ -63,11 +65,14 @@ img {
 	font-style: italic;
 }
 
+// Body
+
 .top-wrapper {
 	font-family: var(--ff-main);
 	font-size: var(--fs-400);
-	text-align: center;
 	color: var(--cl-neutral-400);
+	background: var(--cl-neutral-200);
+	text-align: center;
 	display: grid;
 	align-content: center;
 	margin: 0;
@@ -75,10 +80,17 @@ img {
 	scrollbar-gutter: stable;
 }
 
-// ---------------------------------
+// Logo
+
+.logo {
+	margin-block: 3rem 0;
+}
+
+// Top section
 
 .top-section {
 	display: grid;
+	margin-block: 3.375rem;
 }
 
 .top-section::before {
@@ -116,10 +128,21 @@ img {
 	border-radius: 1.813rem;
 	text-decoration: none;
 	border: 0;
+	transition: background .3s;
+
+	&:hover {
+		background: var(--cl-main-300);
+	}
 }
 
 .top-section__button--accent-color {
 	background: var(--cl-accent-400);
+	margin-bottom: 0;
+	transition: background .3s;
+
+	&:hover {
+		background: var(--cl-accent-300);
+	}
 }
 
 .top-section__button-version {
@@ -128,6 +151,10 @@ img {
 }
 
 // ---------------------------------
+
+.middle-section {
+	margin-top: 4rem;
+}
 
 .middle-section::before {
 	content: "";
@@ -155,6 +182,7 @@ img {
 	gap: 1.5rem;
 	justify-content: center;
 	padding-inline: 1.5rem;
+	margin-block: 4rem 0;
 }
 
 .middle-section__gallery-image {
@@ -167,19 +195,22 @@ img {
 	letter-spacing: var(--le-700);
 	color: var(--cl-main-400);
 	text-transform: uppercase;
+	margin-block: 4rem 0;
 }
 
 .middle-section__title {
 	font: var(--ty-heading-secondary);
 	color: var(--cl-neutral-800);
-	padding-inline: 1rem;
 	text-wrap: balance;
+	padding-inline: 1.5rem;
+	margin-block: 1.5rem 0;
 }
 
 .middle-section__copy {
 	font: var(--ty-copy-primary);
 	text-wrap: pretty;
-	margin: 0 1.5rem 2rem;
+	padding-inline: 1.5rem;
+	margin-block: 2rem 0;
 }
 
 // ---------------------------------
@@ -188,6 +219,7 @@ img {
 	display: grid;
 	align-content: center;
 	grid-template-rows: auto 1.75rem 1.75rem auto auto 1fr;
+	margin-block: 4rem 0;
 }
 
 .bottom-section::before {
@@ -245,6 +277,11 @@ img {
 	border: 0;
 	grid-column: 1;
 	grid-row: 6 / 7;
+	transition: background .3s;
+
+	&:hover {
+		background: var(--cl-accent-300);
+	}
 }
 
 .bottom-section__button-version {
