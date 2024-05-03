@@ -74,12 +74,23 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 48rem) {
+  .top-section::before {
+    height: 18.938rem;
+  }
+}
 .top-section__title {
   font: var(--ty-heading-primary);
   color: var(--cl-neutral-800);
   text-wrap: balance;
   margin-block: 3rem 0;
   padding-inline: 1.5rem;
+}
+@media (min-width: 48rem) {
+  .top-section__title {
+    --ty-heading-primary: var(--fw-black) var(--fs-800)/var(--lh-100) var(--ff-main);
+    margin-inline: 20%;
+  }
 }
 .top-section__copy {
   font: var(--ty-copy-primary);
@@ -143,9 +154,19 @@ img {
   padding-inline: 1.5rem;
   margin-block: 4rem 0;
 }
+@media (min-width: 48rem) {
+  .middle-section__gallery {
+    gap: 0.75rem;
+  }
+}
 .middle-section__gallery-image {
   max-width: 9.438rem;
   border-radius: 0.5rem;
+}
+@media (min-width: 48rem) {
+  .middle-section__gallery-image {
+    max-width: 10.25rem;
+  }
 }
 .middle-section__highlight {
   font: var(--ty-highlight);
@@ -158,14 +179,23 @@ img {
   font: var(--ty-heading-secondary);
   color: var(--cl-neutral-800);
   text-wrap: balance;
-  padding-inline: 1.5rem;
-  margin-block: 1.5rem 0;
+  margin: 1.5rem;
+}
+@media (min-width: 48rem) {
+  .middle-section__title {
+    --ty-heading-secondary: var(--fw-black) var(--fs-700)/var(--lh-300) var(--ff-main);
+    margin-inline: 20%;
+  }
 }
 .middle-section__copy {
   font: var(--ty-copy-primary);
   text-wrap: pretty;
-  padding-inline: 1.5rem;
-  margin-block: 2rem 0;
+  margin: 2rem 1.5rem 0;
+}
+@media (min-width: 48rem) {
+  .middle-section__copy {
+    margin-inline: 15%;
+  }
 }
 .bottom-section {
   display: grid;
@@ -200,16 +230,25 @@ img {
   color: var(--cl-neutral-200);
   grid-column: 1;
   grid-row: 4 / 5;
-  margin-block: 4rem 0;
-  padding-inline: 1.5rem;
+  margin: 4rem 1.5rem 0;
+}
+@media (min-width: 48rem) {
+  .bottom-section__title {
+    --ty-heading-secondary: var(--fw-black) var(--fs-700)/var(--lh-300) var(--ff-main);
+    margin-inline: 20%;
+  }
 }
 .bottom-section__copy {
   font: var(--ty-copy-secondary);
   color: var(--cl-neutral-200);
   grid-column: 1;
   grid-row: 5 / 6;
-  margin-block: 1.5rem 0;
-  padding-inline: 1.5rem;
+  margin: 1.5rem 1.5rem 0;
+}
+@media (min-width: 48rem) {
+  .bottom-section__copy {
+    margin: 2rem 10% 0;
+  }
 }
 .bottom-section__button {
   font: var(--ty-button);
@@ -228,6 +267,11 @@ img {
 }
 .bottom-section__button:hover {
   background: var(--cl-accent-300);
+}
+@media (min-width: 48rem) {
+  .bottom-section__button {
+    margin-top: 2.5rem;
+  }
 }
 .bottom-section__button-version {
   color: var(--cl-accent-200);

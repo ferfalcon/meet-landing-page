@@ -101,6 +101,10 @@ img {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	
+	@media (min-width: 48rem) {
+		height: 18.938rem;
+	}
 }
 
 .top-section__title {
@@ -109,6 +113,11 @@ img {
 	text-wrap: balance;
 	margin-block: 3rem 0;
 	padding-inline: 1.5rem;
+
+	@media (min-width: 48rem) {
+		--ty-heading-primary: var(--fw-black) var(--fs-800)/var(--lh-100) var(--ff-main);
+		margin-inline: 20%;
+	}
 }
 
 .top-section__copy {
@@ -183,11 +192,19 @@ img {
 	justify-content: center;
 	padding-inline: 1.5rem;
 	margin-block: 4rem 0;
+	
+	@media (min-width: 48rem) {
+		gap: .75rem;
+	}
 }
 
 .middle-section__gallery-image {
 	max-width: 9.438rem;
 	border-radius: .5rem;
+	
+	@media (min-width: 48rem) {
+		max-width: 10.25rem;
+	}
 }
 
 .middle-section__highlight {
@@ -202,15 +219,22 @@ img {
 	font: var(--ty-heading-secondary);
 	color: var(--cl-neutral-800);
 	text-wrap: balance;
-	padding-inline: 1.5rem;
-	margin-block: 1.5rem 0;
+	margin: 1.5rem;
+
+	@media (min-width: 48rem) {
+		--ty-heading-secondary: var(--fw-black) var(--fs-700)/var(--lh-300) var(--ff-main);
+		margin-inline: 20%;
+	}
 }
 
 .middle-section__copy {
 	font: var(--ty-copy-primary);
-	text-wrap: pretty;
-	padding-inline: 1.5rem;
-	margin-block: 2rem 0;
+	text-wrap:pretty;
+	margin: 2rem 1.5rem 0;
+
+	@media (min-width: 48rem) {
+		margin-inline: 15%;
+	}
 }
 
 // ---------------------------------
@@ -251,8 +275,12 @@ img {
 	color: var(--cl-neutral-200);
 	grid-column: 1;
 	grid-row: 4 / 5;
-	margin-block: 4rem 0;
-	padding-inline: 1.5rem;
+	margin: 4rem 1.5rem 0;
+
+	@media (min-width: 48rem) {
+		--ty-heading-secondary: var(--fw-black) var(--fs-700)/var(--lh-300) var(--ff-main);
+		margin-inline: 20%;
+	}
 }
 
 .bottom-section__copy {
@@ -260,8 +288,12 @@ img {
 	color: var(--cl-neutral-200);
 	grid-column: 1;
 	grid-row: 5 / 6;
-	margin-block: 1.5rem 0;
-	padding-inline: 1.5rem;
+	margin: 1.5rem 1.5rem 0;
+	
+	
+	@media (min-width: 48rem) {
+		margin: 2rem 10% 0;
+	}
 }
 
 .bottom-section__button {
@@ -281,6 +313,10 @@ img {
 
 	&:hover {
 		background: var(--cl-accent-300);
+	}
+
+	@media (min-width: 48rem) {
+		margin-top: 2.5rem;
 	}
 }
 
