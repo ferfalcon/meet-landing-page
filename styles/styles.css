@@ -292,7 +292,7 @@ img {
 }
 @media (min-width: 90rem) {
   .bottom-section {
-    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-columns: 11% 1fr 1fr 1fr 11%;
     grid-template-rows: auto 1.75rem 1.75rem auto;
     margin-top: 4.5rem;
   }
@@ -364,8 +364,9 @@ img {
   .bottom-section__copy {
     grid-column: 3;
     grid-row: 4;
-    margin: auto;
+    margin: auto -5rem auto 6.5rem;
     text-align: initial;
+    text-wrap: pretty;
   }
 }
 .bottom-section__button {
