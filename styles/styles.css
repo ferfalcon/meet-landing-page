@@ -97,7 +97,7 @@ img {
 }
 @media (min-width: 90rem) {
   .top-section::before {
-    background: url('../images/image-hero.png') right / cover no-repeat;
+    background: url('../images/image-hero-left.png') right / cover no-repeat;
     height: 18.938rem;
     grid-row: 1 / span 3;
   }
