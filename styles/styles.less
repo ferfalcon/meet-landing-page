@@ -124,15 +124,20 @@ img {
 		@media (min-width: 90rem) {
 			background: url('../images/image-hero-left.png') right / cover no-repeat ;
 			grid-row: 1 / span 3;
+			width: 100%;
+			max-width: 24.625rem;
+			justify-self: end;
 		}
 	}
-
+	
 	&::after {
 		@media (min-width: 90rem) {
 			content: '';
 			background: url('../images/image-hero-right.png') left / cover no-repeat;
-			height: 18.938rem;
 			grid-row: 1 / span 3;
+			height: 18.938rem;
+			width: 100%;
+			max-width: 24.625rem;
 			align-self: end;
 		}
 	}
@@ -185,6 +190,10 @@ img {
 		
 		@media (min-width: 48rem) {
 			flex-direction: row;
+		}
+		
+		@media (min-width: 90rem) {
+			margin-bottom: .5rem;
 		}
 	}
 

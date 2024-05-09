@@ -103,14 +103,19 @@ img {
   .top-section::before {
     background: url('../images/image-hero-left.png') right / cover no-repeat;
     grid-row: 1 / span 3;
+    width: 100%;
+    max-width: 24.625rem;
+    justify-self: end;
   }
 }
 @media (min-width: 90rem) {
   .top-section::after {
     content: '';
     background: url('../images/image-hero-right.png') left / cover no-repeat;
-    height: 18.938rem;
     grid-row: 1 / span 3;
+    height: 18.938rem;
+    width: 100%;
+    max-width: 24.625rem;
     align-self: end;
   }
 }
@@ -165,6 +170,11 @@ img {
 @media (min-width: 48rem) {
   .top-section__buttons-wrapper {
     flex-direction: row;
+  }
+}
+@media (min-width: 90rem) {
+  .top-section__buttons-wrapper {
+    margin-bottom: 0.5rem;
   }
 }
 .top-section__button {
