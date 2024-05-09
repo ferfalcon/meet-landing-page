@@ -288,7 +288,8 @@ img {
   display: grid;
   align-content: center;
   grid-template-rows: auto 1.75rem 1.75rem auto auto 1fr;
-  margin-top: 4rem;
+  margin: 4rem auto 0;
+  max-width: 90rem;
 }
 @media (min-width: 90rem) {
   .bottom-section {
