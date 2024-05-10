@@ -94,7 +94,11 @@ img {
 // Logo
 
 .logo {
-	margin-block: 3rem 0;
+	margin-top: 3rem;
+	
+	@media (min-width: 90rem) {
+		margin-top: 5rem;
+	}
 }
 
 // Top section
@@ -104,7 +108,7 @@ img {
 	margin: 3.375rem auto 0;
 
 	@media (min-width: 48rem) {
-		margin-top: 4rem;
+		margin-top: 3.8rem;
 	}
 
 	@media (min-width: 90rem) {
@@ -115,14 +119,14 @@ img {
 	&::before {
 		content: '';
 		height: 9.563rem;
-		background: url('../images/image-hero.png') center / cover no-repeat ;
+		background: url('../images/image-hero.png') center / cover no-repeat;
 		
 		@media (min-width: 48rem) {
 			height: 18.938rem;
 		}
 		
 		@media (min-width: 90rem) {
-			background: url('../images/image-hero-left.png') right / cover no-repeat ;
+			background: url('../images/image-hero-left.png') right / cover no-repeat;
 			grid-row: 1 / span 3;
 			width: 100%;
 			max-width: 24.625rem;
@@ -193,6 +197,7 @@ img {
 		}
 		
 		@media (min-width: 90rem) {
+			gap: 2rem;
 			margin-bottom: .5rem;
 		}
 	}
@@ -210,6 +215,10 @@ img {
 		
 		&:hover {
 			background: var(--cl-main-300);
+		}
+
+		@media (min-width: 90rem) {
+			padding-inline: 1.5rem;
 		}
 	}
 	
@@ -237,7 +246,7 @@ img {
 	}
 
 	@media (min-width: 90rem) {
-		margin-top: 7.375rem;
+		margin-top: 6.8rem;
 	}
 
 	&::before {
@@ -275,11 +284,13 @@ img {
 			grid-template-columns: repeat(4, 1fr);
 			gap: .75rem;
 			margin-inline: auto;
+			margin-top: 4.25rem;
 			width: fit-content;
 		}
 		
 		@media (min-width: 90rem) {
 			gap: 1.875rem;
+			margin-top: 3.95rem;
 		}
 	}
 
@@ -301,6 +312,14 @@ img {
 		color: var(--cl-main-400);
 		text-transform: uppercase;
 		margin: 4rem 1.5rem 0;
+
+		@media (min-width: 48rem) {
+			margin-top: 3rem;
+		}
+
+		@media (min-width: 90rem) {
+			margin-top: 5rem;
+		}
 	}
 
 	&__title {
@@ -338,7 +357,7 @@ img {
 	display: grid;
 	align-content: center;
 	grid-template-rows: auto 1.75rem 1.75rem auto auto 1fr;
-	margin: 4rem auto 0;
+	margin: 5rem auto 0;
 	max-width: 90rem;
 	
 	@media (min-width: 90rem) {
@@ -394,7 +413,7 @@ img {
 	@media (min-width: 90rem) {
 		grid-column: 2;
 		text-align: initial;
-		margin: auto;
+		margin: 5.5rem auto 0 .5rem;
 	}
 }
 
@@ -406,13 +425,15 @@ img {
 	margin: 1.5rem 1.5rem 0;
 	
 	@media (min-width: 48rem) {
-		margin: 2rem 10% 0;
+		margin-inline: auto;
+		margin-top: 2rem;
+		max-width: 36rem;
 	}
 	
 	@media (min-width: 90rem) {
 		grid-column: 3;
 		grid-row: 4;
-		margin: auto -5rem auto 6.5rem;
+		margin: 5.5rem -5rem auto 6.7rem;
 		text-align: initial;
 		text-wrap: pretty;
 	}
@@ -444,7 +465,7 @@ img {
 	@media (min-width: 90rem) {
 		grid-column: 4;
 		grid-row: 4;
-		margin: auto 0 auto auto;
+		margin: 6.5rem .5rem auto auto;
 	}
 }
 

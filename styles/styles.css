@@ -72,7 +72,12 @@ img {
   scrollbar-gutter: stable;
 }
 .logo {
-  margin-block: 3rem 0;
+  margin-top: 3rem;
+}
+@media (min-width: 90rem) {
+  .logo {
+    margin-top: 5rem;
+  }
 }
 .top-section {
   display: grid;
@@ -80,7 +85,7 @@ img {
 }
 @media (min-width: 48rem) {
   .top-section {
-    margin-top: 4rem;
+    margin-top: 3.8rem;
   }
 }
 @media (min-width: 90rem) {
@@ -174,6 +179,7 @@ img {
 }
 @media (min-width: 90rem) {
   .top-section__buttons-wrapper {
+    gap: 2rem;
     margin-bottom: 0.5rem;
   }
 }
@@ -190,6 +196,11 @@ img {
 }
 .top-section__button:hover {
   background: var(--cl-main-300);
+}
+@media (min-width: 90rem) {
+  .top-section__button {
+    padding-inline: 1.5rem;
+  }
 }
 .top-section__button--accent-color {
   background: var(--cl-accent-400);
@@ -211,7 +222,7 @@ img {
 }
 @media (min-width: 90rem) {
   .middle-section {
-    margin-top: 7.375rem;
+    margin-top: 6.8rem;
   }
 }
 .middle-section::before {
@@ -249,12 +260,14 @@ img {
     grid-template-columns: repeat(4, 1fr);
     gap: 0.75rem;
     margin-inline: auto;
+    margin-top: 4.25rem;
     width: fit-content;
   }
 }
 @media (min-width: 90rem) {
   .middle-section__gallery {
     gap: 1.875rem;
+    margin-top: 3.95rem;
   }
 }
 .middle-section__gallery-image {
@@ -276,6 +289,16 @@ img {
   color: var(--cl-main-400);
   text-transform: uppercase;
   margin: 4rem 1.5rem 0;
+}
+@media (min-width: 48rem) {
+  .middle-section__highlight {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 90rem) {
+  .middle-section__highlight {
+    margin-top: 5rem;
+  }
 }
 .middle-section__title {
   font: var(--ty-heading-secondary);
@@ -310,7 +333,7 @@ img {
   display: grid;
   align-content: center;
   grid-template-rows: auto 1.75rem 1.75rem auto auto 1fr;
-  margin: 4rem auto 0;
+  margin: 5rem auto 0;
   max-width: 90rem;
 }
 @media (min-width: 90rem) {
@@ -368,7 +391,7 @@ img {
   .bottom-section__title {
     grid-column: 2;
     text-align: initial;
-    margin: auto;
+    margin: 5.5rem auto 0 0.5rem;
   }
 }
 .bottom-section__copy {
@@ -380,14 +403,16 @@ img {
 }
 @media (min-width: 48rem) {
   .bottom-section__copy {
-    margin: 2rem 10% 0;
+    margin-inline: auto;
+    margin-top: 2rem;
+    max-width: 36rem;
   }
 }
 @media (min-width: 90rem) {
   .bottom-section__copy {
     grid-column: 3;
     grid-row: 4;
-    margin: auto -5rem auto 6.5rem;
+    margin: 5.5rem -5rem auto 6.7rem;
     text-align: initial;
     text-wrap: pretty;
   }
@@ -419,7 +444,7 @@ img {
   .bottom-section__button {
     grid-column: 4;
     grid-row: 4;
-    margin: auto 0 auto auto;
+    margin: 6.5rem 0.5rem auto auto;
   }
 }
 .bottom-section__button-version {
